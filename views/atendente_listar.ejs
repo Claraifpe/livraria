@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendentes</title>
+    <%- include("partials/cabecalho.ejs")%>
+</head>
+
+<body>
+    <h1>Lista de atendentes</h1>
+</body>
+<div>
+    <table style="border: 1px solid; text-align: center; width: 100%;" class="table table-striped">
+        <tr>
+            <th>Nome</th>
+            <th>Detalhes</th>
+            <th>Deletar</th>
+        </tr>
+        <%for(const element of listaPessoas){ %>
+            <tr>
+                <td>
+                    <%= element.nome%>
+                </td>
+                <td><a class="btn btn-warning" href="/atendente/detalhar/<%= element.codigo%>">Detalhar</a></td>
+                <td><a class="btn btn-danger" onclick="return confirm('Deseja realmente remover?')"
+                        href="/atendente/deletar/<%= element.codigo%>">Deletar</a></td>
+            </tr>
+            <%}%>
+    </table>
+    <h3>
+
+    </h3>
+    <a href="/" class="btn btn-primary">Voltar</a>
+</div>
+
+</html>

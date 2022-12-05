@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livro</title>
+</head>
+
+<body>
+  <%- include("partials/cabecalho.ejs")%>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">CODIGO: &ensp;<%= resultado.codigo %>
+        </h5>
+        <h5 class="card-title">NOME: &ensp;<%= resultado.nome %>
+        </h5>
+        <h5 class="card-title">AUTOR: &ensp;<%= resultado.autor %>
+        </h5>
+      </div>
+    </div>
+    <a href="/livro/listar" class="btn btn-primary">Voltar</a>
+    <a href="/livro/atualizar/<%= resultado.codigo %>" class="btn btn-warning">Editar</a>
+    <%- include("partials/rodape.ejs")%>
+</body>
+
+</html>

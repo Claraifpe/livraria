@@ -1,0 +1,48 @@
+body {
+    background: url("https://th.bing.com/th/id/R.85acdccf7d912825b4d63d83f3ece929?rik=Q%2fxErKSikCOo8A&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    justify-content: center;
+    align-items: center;
+    /* color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw; */
+}
+
+div.card{
+    background: rgba(200, 107, 253, 0.5);
+    width: 45vh;
+    bottom: 35vh;
+    /*  right: 35%; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+div.card h2{
+    color: #fff;
+
+} 
+div.card h6{
+    color: #fff;
+
+} 
+p.card-text {
+    color: #fff;
+
+} 
+/* main.container{
+    ;   
+    min-width: 100px;
+    min-height: 40vh;
+    padding: 2rem;  
+    border-radius: 5px; 
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+} */
+
+/* url("https://th.bing.com/th/id/OIP.imdQOfTlix7XiSEJ28WeZgHaEo?pid=ImgDet&rs=1") */
